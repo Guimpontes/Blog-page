@@ -1,0 +1,260 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #F2E7FA;
+    --green: #4fff4b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.primeira-secao {
+    display: flex;
+    justify-content: center;
+    background-color: var(--purple-bg);
+    border-bottom: 6px solid var(--green);
+    padding: 50px 0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.logo span {
+    color: var(--green)
+}
+
+.campo-navegacao a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 40px;
+    border-left: 3px solid transparent;
+    transition: 0.2s ease;
+}
+
+.campo-navegacao a:last-child {
+    margin-right: 0;
+}
+
+.campo-navegacao a:hover {
+    border-color: var(--green);
+}
+
+.campo-pesquisa {
+    display: flex;
+}
+
+.campo-pesquisa input {
+    width: 230px;
+    height: 40px;
+    padding-left: 25px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--dark-bg);
+    color: var(--white);
+    outline: none;
+}
+
+.campo-pesquisa input::placeholder {
+    color: var(--white);
+}
+
+.campo-pesquisa button {
+    width: 60px;
+    height: 40px;
+    background-color: var(--button-bg);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.assunto h1 {
+    color: #9e6dc2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-right: 110px;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.assunto h2 {
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-right: 200px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.assunto p {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--button-bg);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.assunto p:hover {
+    gap: 20px;
+}
+
+.imagem-introducao {
+    width: 574px;
+    height: 350px;
+}
+
+/*----------SEGUNDA SEÇÃO------------*/
+
+.segunda-secao {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.assunto-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*Parte-1*/
+.poster-1 img {
+    width: 569px;
+    height: 342px;
+}
+
+.poster-1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.parte1-assunto {
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parte1-assunto h2 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 10;
+}
+
+.parte1-assunto p {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 570px;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+/*Parte-2*/
+.parte-2 {
+    width: 470px;
+}
+
+.data {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.texto-assunto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 25px;
+}
+
+.linha-horizontal {
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-purple);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.terceira-secao {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.assuntos-finais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.assunto-final-parte1,
+.assunto-final-parte2,
+.assunto-final-parte3 {
+    width: 374px;
+}
+
+.data-assunto-final {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.titulo-assunto-final {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.texto-assunto-final {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 25px;
+}
